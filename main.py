@@ -127,7 +127,6 @@ def main():
     args = command.split(" ")
     func = parkingLot.getFunctionFromString(args[0])
     output = func(*args[1:])
-    print(output)
     outputFile.write(str(output)+"\n")
   
   outputFile.close()
